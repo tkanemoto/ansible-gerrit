@@ -47,6 +47,7 @@ Role Variables
 | gerrit_ldap_group_member_pattern       | (|(memberUid=${username})(gidNumber=${gidNumber}))               | Query pattern to use when searching for the groups that a user account is currently a member of                           |
 | gerrit_ldap_group_name                 | cn                                                               | Name of the attribute on the group object which contains the value to use as the group name in Gerrit                     |
 | gerrit_plugins_allow_remote_admin      | false                                                            | Allow remote admin of plugins                                                                                             |
+| gerrit_core_packed_git_open_files      | 1024                                                             | Maximum number of pack files to have open at once.                                                                        |
 
 Dependencies
 ------------
