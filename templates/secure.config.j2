@@ -10,3 +10,4 @@
 [ldap]
         password = {{ gerrit_ldap_password }}
 {% endif %}
+{{ gerrit_extra_secure_config | default('') }}
